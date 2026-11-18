@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Arpegio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <a href="pagina.html" class="logo">
+            <img src="https://dcdn-us.mitiendanube.com/stores/004/533/025/themes/common/logo-870689834-1763736255-cbd8fc3ffc113a5ea2a1509ac1fa658d1763736255-480-0.webp" alt="Arpegio Instrumentos">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="pagina.html">Inicio</a></li>
+                <li><a href="cuenta.html" class="active">Mi Cuenta</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="horarios.html">Horarios y Ubicación</a></li>
+                <li><a href="pagos.html">Métodos de Pago</a></li>
+                <li><a href="ayuda.html">Centro de Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="login-wrapper">
+        <section class="box-container login-box">
+            <h2 style="text-align: center; margin-bottom: 20px;">Iniciar Sesión</h2>
+            <form onsubmit="event.preventDefault(); login();">
+                <input type="text" id="usuario" class="input-general" placeholder="Usuario">
+                <input type="password" id="password" class="input-general" placeholder="Contraseña">
+                <button type="submit" class="btn-primary">Ingresar</button>
+            </form>
+            <p id="mensaje"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Arpegio Instrumentos Musicales</p>
+    </footer>
+
+</body>
+</html>
